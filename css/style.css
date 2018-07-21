@@ -6,7 +6,7 @@
 }
 .circle img{
     width: 100px;
-    height: 100px;
+    height:100px;
     position: relative;
     animation-name: pc;
     animation-duration: 9s;
@@ -15,19 +15,36 @@
     
     
 }
+.point{
+    position: absolute;
+    right: 60px;
+    bottom: 60px;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: black;
+}
 @keyframes pc{
             
-    0%   { top:0px; }
-    1%{ transform: rotate(90deg)};
-    20%{transform: rotate(90deg)}
-    20%  { top:680px;left:0px;}
-    20%{transform: rotate(0deg)}
-    39%{transform: rotate(0deg)}
-    40%  { top:680px;left:740px;}
-    40%{transform: rotate(-90deg)}
-    60%  { top:0; left:740px;bottom:0px;}
-    80%  { left:1460px;top:0px;} 
-    100% { left:1460px;top:680px;}
+    0%  {top:0px;}
+    1%  {transform: rotate(90deg)}
+    19% {transform: rotate(90deg)}
+    20% {top:680px;left:0px;}
+    21% {transform: rotate(0deg)}
+    39% {transform: rotate(0deg)}
+    40% {top:680px;left:740px;}
+    41% {transform: rotate(-90deg)}
+    59% {transform: rotate(-90deg)}
+    60% {top:0; left:740px;bottom:0px;}
+    61% {transform: rotate(0deg)}
+    79% {transform: rotate(0deg)}
+    80% {left:1460px;top:0px;} 
+    81% {transform: rotate(90deg)}
+    100% {transform: rotate(90deg)}
+    100%{left:1460px;top:680px;}
+    100%{z-index: 1;}
+
+    
 }
 
 
